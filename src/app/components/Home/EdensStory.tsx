@@ -33,6 +33,7 @@ export default function EdensStory() {
             <p>Together, we can make a difference.</p>
           </div>
           <img
+            className="hidden md:block"
             width={300}
             height={500}
             src="https://place-hold.it/300x500"
