@@ -5,9 +5,9 @@ export default function Hero() {
         <div className="lg:flex">
           <div className="lg:shrink-0">
             <img
-              src="https://place-hold.it/750x450"
-              alt="hero"
-              className="w-full"
+              src="/butterfly.png"
+              alt="Orange Flower With Butterfly"
+              className="object-cover h-48 w-96"
             />
           </div>
           <div className="flex flex-col justify-between p-8 text-center">
