@@ -15,6 +15,9 @@ const config: Config = {
         primary: "#813e57",
         accent: "#D5CFC9",
       },
+      fontFamily: {
+        primary: ["Quicksand", "sans-serif"],
+      },
     },
   },
   plugins: [],
