@@ -1,13 +1,17 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section>
-      <div className="container container-fluid my-8 bg-accent">
+      <div className="container container-fluid mb-8 bg-accent">
         <div className="lg:flex">
-          <div className="lg:shrink-0">
-            <img
-              src="/butterfly.png"
+          <div className="w-full">
+            <Image
+              src="/butterfly.jpg"
               alt="Orange Flower With Butterfly"
-              className="object-cover h-48 w-96"
+              className="w-full object-cover"
+              width={2144}
+              height={1424}
             />
           </div>
           <div className="flex flex-col justify-between p-8 text-center">

@@ -8,48 +8,43 @@ import CallToAction from "./components/Home/CallToAction";
 export default function Home() {
   return (
     <>
-      <header className="container flex flex-col items-center gap-8 pt-10">
-        <div id="logo">
-          <Image
-            width={760}
-            height={113}
-            src="/logo.png"
-            alt="Eden's Flower Garden Logo"
-          />
-        </div>
+      <header className="container flex flex-col items-center gap-8">
         <nav>
-          <div className="navbar">
-            <div className="container nav-container">
-              <input className="checkbox" type="checkbox" name="" id="" />
-              <div className="block absolute z-10 flex flex-col justify-between h-20">
-                <span className="block h-2 w-full rounded-sm bg-black"></span>
-                <span className="block h-2 w-full rounded-sm bg-black"></span>
-                <span className="block h-2 w-full rounded-sm bg-black"></span>
-              </div>
-              <div className="logo">
-                <h1>Navbar</h1>
-              </div>
-              <div className="menu-items">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Eden's Story</a>
-                </li>
-                <li>
-                  <a href="#">Gallery</a>
-                </li>
-                <li>
-                  <a href="#">What is TNBC?</a>
-                </li>
-                <li>
-                  <a href="#">Donate</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </div>
+          <div className="h-20 flex flex-row items-center mx-4 gap-8 mt-0 pt-0">
+            <input className="hidden" type="checkbox" name="" id="" />
+            <div className="block z-10 flex flex-col justify-between gap-1 w-8 h-6 flex-shrink-0">
+              <span className="block h-1 w-full rounded-sm bg-black"></span>
+              <span className="block h-1 w-full rounded-sm bg-black"></span>
+              <span className="block h-1 w-full rounded-sm bg-black"></span>
             </div>
+            <div className="logo">
+              <Image
+                width={760}
+                height={113}
+                src="/logo.png"
+                alt="Eden's Flower Garden Logo"
+              />
+            </div>
+            <ul className="list-none hidden">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Eden's Story</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <a href="#">What is TNBC?</a>
+              </li>
+              <li>
+                <a href="#">Donate</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
           </div>
         </nav>
         {/* 
