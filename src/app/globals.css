@@ -28,8 +28,44 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+h1 {
+  border: 0;
+  padding: 0;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+h2.caps {
+  @apply font-fjalla font-normal uppercase md:text-3xl lg:text-4xl xl:text-4.5xl;
+}
+
+.content {
+  @apply mx-auto sm:w-11/12 lg:w-10/12 xl:w-8/12;
+}
+
+.border-rr {
+  @apply border-red-500 border-2 border-dashed;
+}
+
+.border-gg {
+  @apply border-green-500 border-2 border-dashed;
+}
+
+.border-bb {
+  @apply border-blue-500 border-2 border-dashed;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }

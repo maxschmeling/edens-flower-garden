@@ -15,7 +15,6 @@ export default function Home() {
     <>
       <header className="container flex flex-col items-center">
         <div className="flex flex-row items-center mx-4 gap-8 mt-0 pt-0">
-          <input className="hidden" type="checkbox" name="" id="" />
           <div
             className="block md:hidden z-10 flex flex-col justify-between gap-1 w-8 h-6 flex-shrink-0"
             onClick={() => setNavHiddenOnMobile(!navHiddenOnMobile)}
@@ -24,13 +23,16 @@ export default function Home() {
             <span className="block h-1 w-full rounded-sm bg-black"></span>
             <span className="block h-1 w-full rounded-sm bg-black"></span>
           </div>
-          <div className="md:pt-10 box-border">
+          <div className="md:pt-8 box-border">
+          <h1>
             <Image
-              width={760}
-              height={113}
+              className="w-[150%]"
+              width={438}
+              height={65}
               src="/logo.png"
-              alt="Eden's Flower Garden Logo"
+              alt="Eden's Flower Garden. Buy flowers. Fight cancer."
             />
+          </h1>
           </div>
         </div>
         <div className="box-border">
@@ -39,34 +41,34 @@ export default function Home() {
               navHiddenOnMobile ? "hidden" : ""
             } md:block my-4 w-full`}
           >
-            <ul className="flex flex-col md:flex-row gap-2 space-between uppercase md:justify-center p-8">
+            <ul className="flex flex-col md:flex-row gap-2 xl:gap-6 space-between space-x-6 text-base xl:text-lg 2xl:text-xl tracking-wide uppercase md:justify-center p-2">
               <li>
-                <a className="underline" href="#top">
+                <a href="#top">
                   Home
                 </a>
               </li>
               <li>
-                <a className="underline" href="#eden">
+                <a href="#eden">
                   Eden’s Story
                 </a>
               </li>
               <li>
-                <a className="underline" href="#gallery">
+                <a href="#gallery">
                   Gallery
                 </a>
               </li>
               <li>
-                <a className="underline" href="#tnbc">
+                <a href="#tnbc">
                   What is TNBC?
                 </a>
               </li>
               <li>
-                <a className="underline" href="#donate">
+                <a href="#donate">
                   Donate
                 </a>
               </li>
               <li>
-                <a className="underline" href="#contact">
+                <a href="#contact">
                   Contact
                 </a>
               </li>

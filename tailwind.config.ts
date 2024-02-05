@@ -17,7 +17,11 @@ const config: Config = {
       },
       fontFamily: {
         primary: ["Quicksand", "sans-serif"],
+        fjalla: ["Fjalla One", "sans-serif"],
       },
+      fontSize: {
+        "4.5xl": ["2.4rem","2.8rem"],
+      }
     },
   },
   plugins: [],
