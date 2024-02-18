@@ -57,6 +57,22 @@ h2.caps {
   @apply border-blue-500 border-2 border-dashed;
 }
 
+#menu {
+  @apply flex-col md:flex-row md:gap-2 xl:gap-6 md:space-x-6 text-xl md:text-base xl:text-lg 2xl:text-xl tracking-wide uppercase md:justify-center;
+}
+
+#menu li {
+  @apply border-t p-2 pr-4 md:p-0 border-slate-300 md:border-none;
+}
+
+#menu li:first-of-type {
+  @apply border-none;
+}
+
+#galleryScroll img {
+  @apply h-full;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

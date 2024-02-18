@@ -22,7 +22,7 @@ export default function Hero() {
             </p>
             <div className="mb-4">
               <a
-                href="https://flowers.com"
+                href="https://www.floristone.com/florist-one-affiliate-program.cfm"
                 className="bg-primary text-white uppercase 2xl:font-bold 2xl:text-lg p-4"
               >
                 Buy Flowers

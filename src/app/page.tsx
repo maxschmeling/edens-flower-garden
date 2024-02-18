@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="container flex flex-col items-center">
+      <header className="container flex flex-col items-center" id="top">
         <div className="flex flex-row items-center mx-4 gap-8 mt-0 pt-0">
           <div
             className="block md:hidden z-10 flex flex-col justify-between gap-1 w-8 h-6 flex-shrink-0"
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="md:pt-8 box-border">
           <h1>
             <Image
-              className="w-[150%]"
+              className=""
               width={438}
               height={65}
               src="/logo.png"
@@ -35,40 +35,40 @@ export default function Home() {
           </h1>
           </div>
         </div>
-        <div className="box-border">
+        <div className="box-border self-start md:self-auto ml-16 md:ml-0">
           <nav
             className={` ${
               navHiddenOnMobile ? "hidden" : ""
             } md:block my-4 w-full`}
           >
-            <ul className="flex flex-col md:flex-row gap-2 xl:gap-6 space-between space-x-6 text-base xl:text-lg 2xl:text-xl tracking-wide uppercase md:justify-center p-2">
+            <ul id="menu" className="flex space-between">
               <li>
-                <a href="#top">
+                <a href="#top" onClick={() => setNavHiddenOnMobile(true)}>
                   Home
                 </a>
               </li>
               <li>
-                <a href="#eden">
+                <a href="#eden" onClick={() => setNavHiddenOnMobile(true)}>
                   Eden’s Story
                 </a>
               </li>
               <li>
-                <a href="#gallery">
+                <a href="#gallery" onClick={() => setNavHiddenOnMobile(true)}>
                   Gallery
                 </a>
               </li>
               <li>
-                <a href="#tnbc">
+                <a href="#tnbc" onClick={() => setNavHiddenOnMobile(true)}>
                   What is TNBC?
                 </a>
               </li>
               <li>
-                <a href="#donate">
+                <a href="#donate" onClick={() => setNavHiddenOnMobile(true)}>
                   Donate
                 </a>
               </li>
               <li>
-                <a href="#contact">
+                <a href="#contact" onClick={() => setNavHiddenOnMobile(true)}>
                   Contact
                 </a>
               </li>
@@ -89,8 +89,7 @@ export default function Home() {
       </main>
       <footer className="text-center pb-10">
         <p>
-          &copy; 2024 Eden's Foundation. All rights reserved. Eden's Foundation
-          is a 501(c)(3) tax-exempt organization. ID: 13-1788491.
+          &copy; 2024 Eden's Foundation. All rights reserved. {/* Eden's Foundation is a 501(c)(3) tax-exempt organization. ID: 13-1788491. */}
         </p>
       </footer>
     </>
