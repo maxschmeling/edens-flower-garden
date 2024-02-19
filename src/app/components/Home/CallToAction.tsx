@@ -31,7 +31,7 @@ export default function CallToAction() {
         id="buy"
         description="Every time you buy flowers through our site, we donate our full commission to fund research working to find a cure for TNBC."
         button="Buy Flowers"
-        link="https://www.floristone.com/florist-one-affiliate-program.cfm"
+        link="http://www.floristone.com/index.cfm?source_id=aff&AffiliateID=2024026359"
       />
       <CtaItem
         title={<>I just want <span className="whitespace-nowrap">to donate.</span></>}
