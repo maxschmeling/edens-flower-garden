@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="container flex flex-col items-center" id="top">
+      <header className="container flex flex-col items-center pt-2 sm:pt-0" id="top">
         <div className="flex flex-row items-center mx-4 gap-8 mt-0 pt-0 pb-4">
           <div
             className="block md:hidden z-10 flex flex-col justify-between gap-1 w-8 h-6 flex-shrink-0"
