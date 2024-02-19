@@ -1,6 +1,6 @@
 export default function Gallery() {
   return (
-    <section className="py-12" id="gallery">
+    <section className="pb-4 md:pt-6 md:pb-12" id="gallery">
       <div className="overflow-scroll no-scrollbar">
         <div className="flex flex-row gap-4 py-12 ml-12 h-96" id="galleryScroll">
           <img src="/gallery/boys.jpg" alt="Eden's boys" />
@@ -15,7 +15,6 @@ export default function Gallery() {
           <img src="/gallery/dressed-up.jpg" alt="Steve and Eden" className="pr-12" />
         </div>
       </div>
-      <p className="float-right hidden max-sm:block">MOB</p><p className="float-right hidden sm:max-md:block">SM</p><p className="float-right hidden md:max-lg:block">MD</p><p className="float-right hidden lg:max-xl:block">LG</p><p className="float-right hidden xl:max-2xl:block">XL</p><p className="float-right hidden 2xl:block">2XL</p>
     </section>
   );
 }

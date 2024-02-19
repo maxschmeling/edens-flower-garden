@@ -1,5 +1,5 @@
 const CtaItem = (props: {
-  title: string;
+  title: React.ReactElement | string;
   id: string;
   description: string;
   button: string;
@@ -7,14 +7,14 @@ const CtaItem = (props: {
 }) => {
   return (
     <div className="bg-accent w-80 text-center p-8 flex flex-col justify-between" id={props.id}>
-      <h2 className="font-bold text-xxl uppercase">{props.title}</h2>
-      <div>
+      <h2 className="caps">{props.title}</h2>
+      <div className="my-4">
         <p>{props.description}</p>
       </div>
-      <div className="box-border mt-4">
+      <div className="box-border mt-4 mb-4">
         <a
           href={props.link}
-          className="box-border p-4 bg-primary text-white uppercase"
+          className="bg-primary text-white uppercase 2xl:font-bold 2xl:text-lg p-4"
         >
           {props.button}
         </a>
@@ -27,14 +27,14 @@ export default function CallToAction() {
   return (
     <section className="container flex flex-row gap-4 py-12 justify-center flex-wrap">
       <CtaItem
-        title="Buy Flowers. Fight Cancer."
+        title={<>Buy Flowers. <span className="whitespace-nowrap">Fight Cancer.</span></>}
         id="buy"
         description="Every time you buy flowers through our site, we donate our full commission to fund research working to find a cure for TNBC."
         button="Buy Flowers"
         link="https://www.floristone.com/florist-one-affiliate-program.cfm"
       />
       <CtaItem
-        title="I just want to donate."
+        title={<>I just want <span className="whitespace-nowrap">to donate.</span></>}
         id="donate"
         description="Every dollar you donate goes directly to funding research working to find a cure for TNBC."
         button="Donate"

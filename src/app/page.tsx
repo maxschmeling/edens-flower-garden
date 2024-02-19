@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <header className="container flex flex-col items-center" id="top">
-        <div className="flex flex-row items-center mx-4 gap-8 mt-0 pt-0">
+        <div className="flex flex-row items-center mx-4 gap-8 mt-0 pt-0 pb-4">
           <div
             className="block md:hidden z-10 flex flex-col justify-between gap-1 w-8 h-6 flex-shrink-0"
             onClick={() => setNavHiddenOnMobile(!navHiddenOnMobile)}
@@ -82,11 +82,13 @@ export default function Home() {
         } md:opacity-100`}
       >
         <Hero />
+        {/* <p className="float-right hidden max-sm:block">MOB</p><p className="float-right hidden sm:max-md:block">SM</p><p className="float-right hidden md:max-lg:block">MD</p><p className="float-right hidden lg:max-xl:block">LG</p><p className="float-right hidden xl:max-2xl:block">XL</p><p className="float-right hidden 2xl:block">2XL</p> */}
         <EdensStory />
         <Gallery />
         <WhatIsTnbc />
         <CallToAction />
       </main>
+      {/* <p className="float-right hidden max-sm:block">MOB</p><p className="float-right hidden sm:max-md:block">SM</p><p className="float-right hidden md:max-lg:block">MD</p><p className="float-right hidden lg:max-xl:block">LG</p><p className="float-right hidden xl:max-2xl:block">XL</p><p className="float-right hidden 2xl:block">2XL</p> */}
       <footer className="text-center pb-10">
         <p>
           &copy; 2024 Eden's Foundation. All rights reserved. {/* Eden's Foundation is a 501(c)(3) tax-exempt organization. ID: 13-1788491. */}

@@ -5,8 +5,15 @@ export default function EdensStory() {
     <section className="py-4 text-white" id="eden">
       <div className="bg-primary">
         <div className="flex flex-row content py-8">
-          <div className="w-2/3 md:pr-4 lg:pr-6 text-lg">
+          <div className="ml-4 md:ml-0 w-full md:w-2/3 pr-4 md:pr-4 lg:pr-6 text-lg">
             <h2 className="text-4xl font-bold mb-4">Eden's Story</h2>
+            <img
+              className="md:hidden border-2 border-white w-[200px] float-right ml-2 mb-2"
+              width={232}
+              height={309}
+              src="edens-story.jpg"
+              alt="Eden's story"
+            />
             <p className="2xl:text-xl mb-4">
               Eden's Flower Garden was started by Nate, Jake, and Evan in memory of their mom, Eden,
               who lost her battle with metastatic breast cancer in 2023. More than anything else,
@@ -32,9 +39,9 @@ export default function EdensStory() {
               Together, we can make <span className="whitespace-nowrap">a difference.</span>
             </p>
           </div>
-          <div className="w-1/3">
+          <div className="hidden md:block w-1/3">
             <img
-              className="hidden md:block border-2 border-white w-full object-cover"
+              className="border-2 border-white w-full object-cover"
               width={2320}
               height={3088}
               src="edens-story.jpg"
