@@ -1,6 +1,6 @@
 export default function WhatIsTnbc() {
   return (
-    <section className="bg-primary py-6 text-white" id="tnbc">
+    <section className="bg-primary pb-6 pt-8 text-white" id="tnbc">
       <div className="content text-center">
         <div className="mx-4 md:mx-12 lg:mx-24">
           <h2 className="caps">What is TNBC?</h2>
