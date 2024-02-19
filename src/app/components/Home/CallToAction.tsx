@@ -4,6 +4,7 @@ const CtaItem = (props: {
   description: string;
   button: string;
   link: string;
+  target?: string;
 }) => {
   return (
     <div className="bg-accent w-80 text-center p-8 flex flex-col justify-between" id={props.id}>
@@ -14,6 +15,7 @@ const CtaItem = (props: {
       <div className="box-border mt-4 mb-4">
         <a
           href={props.link}
+          target={props.target || ''}
           className="bg-primary text-white uppercase 2xl:font-bold 2xl:text-lg p-4"
         >
           {props.button}
@@ -32,6 +34,7 @@ export default function CallToAction() {
         description="Every time you buy flowers through our site, we donate our full commission to fund research working to find a cure for TNBC."
         button="Buy Flowers"
         link="http://www.floristone.com/index.cfm?source_id=aff&AffiliateID=2024026359"
+        target="FloristOne.com"
       />
       <CtaItem
         title={<>I just want <span className="whitespace-nowrap">to donate.</span></>}
@@ -39,6 +42,7 @@ export default function CallToAction() {
         description="Every dollar you donate goes directly to funding research working to find a cure for TNBC."
         button="Donate"
         link="https://support.cedars-sinai.edu/fundraiser/4801308"
+        target="cedars-sinai.edu"
       />
       <CtaItem
         title="Email Eden's Foundation."

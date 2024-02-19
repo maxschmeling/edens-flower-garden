@@ -26,7 +26,7 @@ export default function EdensStory() {
               flowers.</span>
             </p>
             <p className="2xl:text-xl mb-4">
-              Support Eden's Flower Garden by purchasing flowers via our <a className="underline" href="https://www.floristone.com/florist-one-affiliate-program.cfm">Florist One affiliate link</a>, by spreading awareness about TNBC, and by <a className="underline" href="https://support.cedars-sinai.edu/fundraiser/4801308">making
+              Support Eden's Flower Garden by purchasing flowers via our <a className="underline" href="https://www.floristone.com/florist-one-affiliate-program.cfm" target="FloristOne.com">Florist One affiliate link</a>, by spreading awareness about TNBC, and by <a className="underline" href="https://support.cedars-sinai.edu/fundraiser/4801308" target="cedars-sinai.edu">making
               donations to Eden's Foundation</a>. All donations made to Eden's Foundation go towards
               funding more research for TNBC and helping us find a cure. With your help, Eden's
               Foundation has raised more than $60,000 to <span className="whitespace-nowrap">fight TNBC.</span>

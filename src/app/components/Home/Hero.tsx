@@ -23,6 +23,7 @@ export default function Hero() {
             <div className="mt-5 mb-8 sm:mb-4 sm:mt-0">
               <a
                 href="http://www.floristone.com/index.cfm?source_id=aff&AffiliateID=2024026359"
+                target="FloristOne.com"
                 className="bg-primary text-white uppercase 2xl:font-bold 2xl:text-lg p-4"
               >
                 Buy Flowers
