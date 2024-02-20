@@ -13,6 +13,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <header>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Eden's Flower Garden" />
+        <meta property="og:url" content="https://edensflowergarden.com/" />
+        <meta property="og:description" content="Buy flowers. Fight cancer." />
+        <meta property="og:site_name" content="Eden's Flower Garden" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Eden's Flower Garden" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:text:title" content="" />
+        <meta name="twitter:image" content="" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:image" content="https://edensflowergarden.com/preview.png" />
+        <meta property="article:publisher" content="https://edensflowergarden.com/" />
+        <meta name="twitter:title" content="Eden's Flower Garden" />
+        <meta name="twitter:description" content="Buy flowers. Fight cancer." />
+        <meta name="twitter:image:src" content="https://edensflowergarden.com/preview.png" />
+      </header>
       <body className="font-primary">{children}</body>
     </html>
   );
