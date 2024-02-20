@@ -26,11 +26,11 @@ export default function RootLayout({
         <meta name="twitter:text:title" content="" />
         <meta name="twitter:image" content="" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:image" content="https://edensflowergarden.com/preview.png" />
+        <meta property="og:image" content="https://edensflowergarden.com/preview.jpg" />
         <meta property="article:publisher" content="https://edensflowergarden.com/" />
         <meta name="twitter:title" content="Eden's Flower Garden" />
         <meta name="twitter:description" content="Buy flowers. Fight cancer." />
-        <meta name="twitter:image:src" content="https://edensflowergarden.com/preview.png" />
+        <meta name="twitter:image:src" content="https://edensflowergarden.com/preview.jpg" />
       </header>
       <body className="font-primary">{children}</body>
     </html>
