@@ -28,6 +28,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:image" content="https://edensflowergarden.com/preview.jpg" />
         <meta property="article:publisher" content="https://edensflowergarden.com/" />
+        <meta name="twitter:text:title" content="Eden's Flower Garden" />
         <meta name="twitter:title" content="Eden's Flower Garden" />
         <meta name="twitter:description" content="Buy flowers. Fight cancer." />
         <meta name="twitter:image:src" content="https://edensflowergarden.com/preview.jpg" />
