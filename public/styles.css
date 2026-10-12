@@ -722,7 +722,13 @@ button {
 }
 
 .footer-brand {
+  display: block;
   width: min(19rem, 75vw);
+}
+
+.footer-brand img {
+  width: 100%;
+  height: auto;
 }
 
 .site-footer > p {
