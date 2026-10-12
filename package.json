@@ -1,25 +1,15 @@
 {
   "name": "edens-flower-garden",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Static website for Eden's Flower Garden.",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "dev": "wrangler dev",
+    "check": "html-validate public/*.html && wrangler deploy --dry-run --outdir .wrangler/dry-run",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "html-validate": "^10.8.0",
+    "wrangler": "^4.149.0"
   }
 }

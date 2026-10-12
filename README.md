@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Eden's Flower Garden
 
-## Getting Started
+Static website for [Eden's Flower Garden](https://edensflowergarden.com/), hosted with Cloudflare Workers Static Assets.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site contains no application server, framework runtime, database, or external asset CDN. HTML, CSS, JavaScript, photos, and fonts are all served from `public/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run check
+npm run deploy
+```
 
-## Learn More
+The temporary `workers.dev` deployment intentionally sends `X-Robots-Tag: noindex, nofollow` and disallows crawling in `robots.txt`. Remove those safeguards when the canonical domain moves to Cloudflare.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Before attaching `edensflowergarden.com`, add the domain to the correct Cloudflare account, verify all imported DNS records, and ask the domain owner to update its authoritative nameservers.
