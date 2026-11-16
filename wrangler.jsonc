@@ -1,9 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "edens-flower-garden",
+  "account_id": "18bf08fb6e6d5ec5a7707832ed413239",
   "compatibility_date": "2026-10-12",
   "workers_dev": true,
   "preview_urls": true,
+  "routes": [
+    { "pattern": "edensflowergarden.com", "custom_domain": true },
+    { "pattern": "www.edensflowergarden.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page",
